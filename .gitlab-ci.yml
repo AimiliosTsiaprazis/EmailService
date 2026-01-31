@@ -1,0 +1,20 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_TLS_CERTDIR: "/certs"
+  IMAGE_NAME: $CI_REGISTRY_IMAGE:latest
+
+before_script:
+  # Log in to GitLab Container Registry
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+build-and-push:
+  stage: build
+  script:
+    # Build the Docker image for the .NET project
+    - docker build -t $IMAGE_NAME .
+    # Push the Docker image to GitLab's container registry
+    - docker push $IMAGE_NAME

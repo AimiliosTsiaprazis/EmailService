@@ -1,0 +1,6 @@
+@VisitorApp_EmailService_HostAddress = http://localhost:5148
+
+GET {{VisitorApp_EmailService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
