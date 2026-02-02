@@ -112,3 +112,29 @@ This project demonstrates experience with:
 - No real email addresses or credentials are included
 - Sensitive configuration values are excluded
 - Test and placeholder data is used in this repository
+
+## Starting and Using the EmailService
+
+To run the EmailService, follow these steps:
+
+1. **Prepare the MainApp**  
+   Ensure the main Visitor Management Application (**BesucherApp**) is set up with **Supabase** and **Angular**.  
+
+2. **Create Supabase Tables**  
+   Create the specific tables required for both Supabase and the EmailService.  
+
+3. **Configure RPC Functions**  
+   Add the necessary Supabase RPC function calls so the EmailService can read/write data correctly.  
+
+4. **Configure appsettings.json**  
+   Add your API keys, host URL, private service email, and allowedHosts settings in `appsettings.json` for Outlook/SMTP communication.  
+
+5. **Run the Project**  
+   Open a terminal in the project folder and run:  
+   ```bash
+   dotnet run
+
+6. **Access Documentation & Dashboard**
+
+Navigate to http://localhost:<port>/swagger to see the API documentation
+Navigate to http://localhost:<port>/hangfire to see the live Hangfire dashboard showing scheduled EmailService jobs
