@@ -138,3 +138,10 @@ To run the EmailService, follow these steps:
 
 Navigate to http://localhost:<port>/swagger to see the API documentation
 Navigate to http://localhost:<port>/hangfire to see the live Hangfire dashboard showing scheduled EmailService jobs
+
+## Screenshots
+<img width="976" height="920" alt="Hangfire" src="https://github.com/user-attachments/assets/05b6138a-0d57-4df1-8d02-835963f4c911" />
+
+<img width="967" height="536" alt="Swagger" src="https://github.com/user-attachments/assets/a3875f4c-5800-4346-a61a-29f9008b9068" />
+
+<img width="807" height="732" alt="Supabase" src="https://github.com/user-attachments/assets/3df8d921-51a0-4161-a52a-a18732155974" />
