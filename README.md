@@ -139,6 +139,21 @@ To run the EmailService, follow these steps:
 Navigate to http://localhost:<port>/swagger to see the API documentation
 Navigate to http://localhost:<port>/hangfire to see the live Hangfire dashboard showing scheduled EmailService jobs
 
+## Project Versions
+- dotnet version: 10.0.102
+- target framework: net9.0
+
+## Key NuGet Packages
+- Hangfire.AspNetCore: 1.8.18  
+- Hangfire.Core: 1.8.18  
+- Hangfire.MemoryStorage: 1.8.1.1  
+- Ical.Net: 4.3.1  
+- MailKit: 4.11.0  
+- Microsoft.AspNetCore.OpenApi: 9.0.4  
+- Microsoft.Extensions.Configuration: 9.0.4  
+- Supabase: 1.1.1  
+- Swashbuckle.AspNetCore: 8.1.1  
+
 ## Screenshots
 
 
